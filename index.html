@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <style></style>
+  <link rel="stylesheet" href="styles/zurui-scss.css">
+  <title></title>
+</head>
+<body>
+  <main>
+    <section id="section1">
+      <h2><span class="num">1.</span> ズルい線</h2>
+      <div class="example">
+        <hr class="zurui-hr">
+      </div>
+      <textarea id="code1" class="code">
+border: 0px solid transparent;
+@include zurui-line-bottom(.1, .5);
+</textarea>
+      <div class="example">
+        <div class="zurui-div"></div>
+      </div>
+      <textarea id="code2" class="code">
+height: 160px;
+@include zurui-line-all(.1, .5);
+</textarea>
+    </section>
+
+    <section id="section2">
+      <h2><span class="num">2.</span> ズルいtext-shadow</h2>
+      <div class="example">
+        <div class="zurui-text-000">
+          ズルい！<br>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+      </div>
+      <textarea id="code3" class="code">
+background-color: #ffc300;
+color: #000000;
+@include zurui-text-shadow-000(.2);
+</textarea>
+      <div class="example">
+        <div class="zurui-text-fff">
+          ズルい！<br>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+      </div>
+      <textarea id="code4" class="code">
+background-color: #3d3d3d;
+color: #ffffff;
+@include zurui-text-shadow-fff(.2);
+</textarea>
+    </section>
+
+    <section id="section3">
+      <h2><span class="num">3.</span> ズルいグラデーション</h2>
+      <div class="example">
+        <div class="zurui-gradient-lighten"></div>
+      </div>
+      <textarea id="code5" class="code">
+height: 160px;
+@include zurui-gradient-top-lighten(#222222, 10%);
+</textarea>
+      <div class="example">
+        <div class="zurui-gradient-darken"></div>
+      </div>
+      <textarea id="code6" class="code">
+height: 160px;
+@include zurui-gradient-top-darken(#48b1f2, 10%);
+</textarea>
+    </section>
+
+    <section id="section5">
+      <h2><span class="num">5.</span> ズルい角丸</h2>
+      <div class="example">
+        <div class="zurui-div-radius">
+          <p>旅行記の新規投稿：写真のアップロード</p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          <button class="zurui-button-radius">写真を選択する</button>
+        </div>
+      </div>
+      <textarea id="code7" class="code">
+background-color: #ffffff;
+@include zurui-border-radius(6px);
+@include zurui-box-shadow;
+</textarea>
+      <textarea id="code8" class="code">
+border: 1px solid darken(#ffc300, 5%);
+color: #ffffff;
+@include zurui-text-shadow-000(.1);
+@include zurui-border-radius(4px);
+@include zurui-gradient-top-lighten(#fbac01, 20%);
+</textarea>
+    </section>
+
+    <section id="section6">
+      <h2><span class="num">6.</span> ズルいbox-shadow</h2>
+      <div class="example">
+        <div class="zurui-box-shadow1"></div>
+      </div>
+      <textarea id="code9" class="code">
+height: 160px;
+background-color: #ffffff;
+@include zurui-border-radius(4px);
+@include zurui-box-shadow;
+</textarea>
+      <div class="example">
+        <div class="zurui-box-shadow2">紹介報酬 <span class="num">50</span>万円</div>
+      </div>
+      <textarea id="code10" class="code">
+background-color: #4b69b8;
+color: #ffffff;
+@include zurui-box-inner(20px);
+</textarea>
+      <div class="example">
+        <div class="zurui-box-shadow3"></div>
+      </div>
+      <textarea id="code11" class="code">
+height: 160px;
+background-color: #ffffff;
+@include zurui-border-radius(4px);
+@include zurui-box-deboss(.1, .1, .1);
+</textarea>
+      <div class="example">
+        <div class="zurui-box-shadow4"></div>
+      </div>
+      <textarea id="code12" class="code">
+height: 160px;
+background-color: #ffffff;
+@include zurui-border-radius(4px);
+@include zurui-box-emboss(.1, .1, .1);
+</textarea>
+    </section>
+
+    <section id="section7">
+      <h2><span class="num">7.</span> ズルいボタン</h2>
+      <div class="example">
+      <button class="zurui-button">ズルい！</button>
+      </div>
+      <textarea id="code13" class="code">
+display: block;
+@include zurui-text-shadow-000(.4);
+@include zurui-gradient-top-lighten(#48b1f2, 10%);
+@include zurui-border-radius(4px);
+@include zurui-box-emboss(.2, .1, .3);
+color: rgba(255, 255, 255, .9);
+text-align: center;
+padding: 10px 30px;
+font-size: 16px;
+line-height: 1em;
+font-weight: bold;
+</textarea>
+      <textarea id="code14" class="code">
+/* &:hover */
+@include zurui-gradient-top-lighten(#48b1f2, 15%);
+color: rgba(255, 255, 255, 1);
+</textarea>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.13/autosize.min.js"></script>
+  <script type="text/javascript" src="javascripts/editcss.js"></script>
+</body>
+</html>

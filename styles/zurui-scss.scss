@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Pinyon+Script);
+
+@import "mixins";
+@import "base";
+
+.zurui-hr {
+  margin: 40px auto;
+  /* border: 0px solid transparent; */
+  /* @include zurui-line-bottom(.1, .5); */
+}
+
+.zurui-div {
+  /* height: 160px; */
+  /* @include zurui-line-all(.1, .5); */
+}
+
+.zurui-text-000 {
+  /* background-color: #ffc300; */
+  /* color: #000000; */
+  padding: 20px;
+  /* @include zurui-text-shadow-000(.2); */
+}
+
+.zurui-text-fff {
+  /* background-color: #3d3d3d; */
+  /* color: #ffffff; */
+  padding: 20px;
+  /* @include zurui-text-shadow-fff(.2); */
+}
+
+.zurui-gradient-lighten {
+  /* height: 160px; */
+  /* @include zurui-gradient-top-lighten(#222222); */
+}
+
+.zurui-gradient-darken {
+  /* height: 160px; */
+  /* @include zurui-gradient-top-darken(#48b1f2); */
+}
+
+.zurui-div-radius {
+  /* background-color: #ffffff; */
+  padding: 20px;
+  /* @include zurui-border-radius(6px); */
+  /* @include zurui-box-shadow; */
+}
+
+.zurui-button-radius {
+  /* border: 1px solid darken(#ffc300, 5%); */
+  /* color: #ffffff; */
+  /* @include zurui-text-shadow-000(.1); */
+  /* @include zurui-border-radius; */
+  /* @include zurui-gradient-top-lighten(#fbac01, 20%); */
+}
+
+.zurui-box-shadow1 {
+  /* height: 160px; */
+  /* background-color: #ffffff; */
+  /* @include zurui-border-radius(4px); */
+  /* @include zurui-box-shadow; */
+}
+
+.zurui-box-shadow2 {
+  .num { font-size: larger; }
+
+  /* background-color: #4b69b8; */
+  /* color: #ffffff; */
+  display: inline-block;
+  padding: 5px 15px 5px 25px;
+  margin-bottom: 20px;
+  position: relative;
+  /* @include zurui-box-inner(20px); */
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid #f0f0f0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid darken(#4b69b8, 10%);
+    transform: rotate(45deg);
+  }
+}
+
+.zurui-box-shadow3 {
+  /* height: 160px; */
+  /* background-color: #ffffff; */
+  /* @include zurui-border-radius(4px); */
+  /* @include zurui-box-deboss; */
+}
+
+.zurui-box-shadow4 {
+  /* height: 160px; */
+  /* background-color: #ffffff; */
+  /* @include zurui-border-radius(4px); */
+  /* @include zurui-box-emboss; */
+}
+
+.zurui-button {
+  /* display: block; */
+  /* @include zurui-text-shadow-000; */
+  /* @include zurui-gradient-top-lighten(#48b1f2); */
+  /* @include zurui-border-radius(4px); */
+  /* @include zurui-box-emboss(.2, .1, .3); */
+  /* color: rgba(255, 255, 255, .9); */
+  /* text-align: center; */
+  /* padding: 10px 30px; */
+  /* font-size: 16px; */
+  /* line-height: 1em; */
+  /* font-weight: bold; */
+
+  &:hover {
+    /* @include zurui-gradient-top-lighten(#48b1f2, 15%); */
+    /* color: rgba(255, 255, 255, 1); */
+  }
+}

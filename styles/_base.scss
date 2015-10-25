@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  background-image: url('../images/purty_wood.png');
+  color: #361f1d;
+  font-size: 14px;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+}
+
+section {
+  padding: 20px 40px;
+  margin: 10px auto;
+  background-image: url('../images/concrete_seamless.png');
+  width: 100%;
+  @include zurui-box-shadow;
+
+  .example {
+    display: inline-block;
+    padding: 20px;
+    width: 49%;
+  }
+
+  .code {
+    border: 0;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 16px;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px 0;
+    vertical-align: top;
+    width: 50%;
+    background-color: #361f1d;
+  }
+}
+
+h2 {
+  padding: 0 10px;
+  @include zurui-text-shadow-fff;
+  @include zurui-line-bottom(.1, 1);
+
+  .num {
+    color: #b0430b;
+    font-size: 30px;
+    font-family: 'Pinyon Script', cursive;
+  }
+}
